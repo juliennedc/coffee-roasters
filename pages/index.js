@@ -1,11 +1,4 @@
 import Head from "next/head";
-<<<<<<< HEAD
-import Example from "../components/example";
-import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
-
-export default function Home() {
-=======
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.scss";
 import { getSortedPostsData } from "../lib/posts";
@@ -21,22 +14,12 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
->>>>>>> main
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-<<<<<<< HEAD
-        <p className="text-3xl">[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{" "}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-      <Example />
-=======
         <p>[Your Self Introduction]</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -55,7 +38,6 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
->>>>>>> main
     </Layout>
   );
 }
