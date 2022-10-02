@@ -963,9 +963,37 @@ module.exports = {
     "disabled",
   ],
   plugins: [
+    require("daisyui"),
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/line-clamp"),
   ],
+  daisyui: {
+    styled: true,
+    themes: true,
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false,
+    prefix: "",
+    darkTheme: "dark",
+    themes: [
+      {
+        coffee: {
+          primary: "#0E8784",
+          "primary-focus": "#66D2CF",
+          secondary: "#facc15",
+          accent: "#ec4899",
+          neutral: "#333D4B",
+          "base-content": "#FEFCF7",
+          info: "#a5f3fc",
+          success: "#4ade80",
+          warning: "#fb923c",
+          error: "#e11d48",
+          "info-content": "#2C343E",
+        },
+      },
+    ],
+  },
 };
