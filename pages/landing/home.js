@@ -43,62 +43,64 @@ export default function Home() {
     },
   ];
   return (
-    <section className="bg-base-100 mx-6">
+    <div>
       <Navbar />
-      <main className="flex flex-col gap-[7.5rem]">
-        <div className="relative  mt-2 min-h-[31.25rem] overflow-hidden ">
-          <Image
-            className="rounded-xl object-cover w-max"
-            fill
-            src="/static/images/home/mobile/image-hero-coffeepress.jpg"
-          />
-          <div className="absolute p-6 flex items-center flex-col h-full justify-center">
-            <h1 className="font-black text-[2.5rem] text-base-content">
-              Great coffee made simple
-            </h1>
+      <section className="bg-base-100 mx-6">
+        <main className="flex flex-col gap-[7.5rem]">
+          <div className="relative  mt-2 min-h-[31.25rem] overflow-hidden ">
+            <Image
+              className="rounded-xl object-cover w-max"
+              fill
+              src="/static/images/home/mobile/image-hero-coffeepress.jpg"
+            />
+            <div className="absolute p-6 flex items-center flex-col h-full justify-center">
+              <h1 className="font-black text-[2.5rem] text-base-content">
+                Great coffee made simple
+              </h1>
 
-            <p className="mt-4 text-base-content">
-              Start your mornings with the world’s best coffees. Try our
-              expertly curated artisan coffees from our best roasters delivered
-              directly to your door, at your schedule.
-            </p>
-            <button className="rounded-md mt-10 font-bold bg-primary text-cream-100 pt-[15px] pb-4 px-[31px] transition-all hover:bg-primary-focus">
-              Create Your Plan
-            </button>
+              <p className="mt-4 text-base-content">
+                Start your mornings with the world’s best coffees. Try our
+                expertly curated artisan coffees from our best roasters
+                delivered directly to your door, at your schedule.
+              </p>
+              <button className="rounded-md mt-10 font-bold bg-primary text-cream-100 pt-[15px] pb-4 px-[31px] transition-all hover:bg-primary-focus">
+                Create Your Plan
+              </button>
+            </div>
           </div>
-        </div>
-        <div>
-          <h2
-            className="text-center font-black text-[2.5rem] leading-[4.5rem] bg-clip-text bg-gradient-to-t from-[#fefcf7]/[0.0001] to-[#83888F]/100 
+          <div>
+            <h2
+              className="text-center font-black text-[2.5rem] leading-[4.5rem] bg-clip-text bg-gradient-to-t from-[#fefcf7]/[0.0001] to-[#83888F]/100 
              text-transparent"
-          >
-            our collection
-          </h2>
-          <div className="flex flex-col items-center justify-center gap-12">
-            {collection.map((kopi) => {
-              return <Collection item={kopi} />;
-            })}
-          </div>
-        </div>
-        <div>
-          <div className="rounded-t-lg bg-info-content px-6 pt-16  pb-8 flex flex-col items-center ">
-            <h2 className="text-[1.75rem] text-base-content font-black ">
-              Why choose us?
+            >
+              our collection
             </h2>
-            <p className="text-base-content text-center mt-6 leading-[25px]">
-              A large part of our role is choosing which particular coffees will
-              be featured in our range. This means working closely with the best
-              coffee growers to give you a more impactful experience on every
-              level.
-            </p>
+            <div className="flex flex-col items-center justify-center gap-12">
+              {collection.map((kopi) => {
+                return <Collection item={kopi} />;
+              })}
+            </div>
           </div>
-          <div className="bg-[#2C343E] px-6 py-[1.875rem] flex flex-col gap-6">
-            {cardList.map((card) => {
-              return <Card item={card} />;
-            })}
+          <div>
+            <div className="rounded-t-lg bg-info-content px-6 pt-16  pb-8 flex flex-col items-center ">
+              <h2 className="text-[1.75rem] text-base-content font-black ">
+                Why choose us?
+              </h2>
+              <p className="text-base-content text-center mt-6 leading-[25px]">
+                A large part of our role is choosing which particular coffees
+                will be featured in our range. This means working closely with
+                the best coffee growers to give you a more impactful experience
+                on every level.
+              </p>
+            </div>
+            <div className="bg-[#2C343E] px-6 py-[1.875rem] flex flex-col gap-6">
+              {cardList.map((card) => {
+                return <Card item={card} />;
+              })}
+            </div>
           </div>
-        </div>
-      </main>
-    </section>
+        </main>
+      </section>
+    </div>
   );
 }
