@@ -9,6 +9,13 @@ body {
 p {
   font-family: "Barlow", sans-serif;
 }
+html,
+body {
+  font-family: var(--font-fraunces);
+}
+p {
+  font-family: var(--font-barlow);
+}
 /* 
 
 * {

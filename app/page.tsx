@@ -6,8 +6,9 @@ async function getPosts() {
   const posts = await res.json();
   return posts;
 }
-
+export const metadata = {
+  title: "My Page Title",
+};
 export default async function Page() {
-  // const recentPosts = await getPosts();
-  return <HomePage recentPosts={recentPosts} />;
+  return "...";
 }
