@@ -1,4 +1,4 @@
-import Image from "next/future/image";
+import Image from "next/image";
 
 export default function Collection(props) {
   console.log("julie imaghe", props);
@@ -9,6 +9,7 @@ export default function Collection(props) {
         src={props.item.image}
         height={151}
         width={200.29}
+        alt=""
       />
       <h3 className="mt-6 text-center text-[#333D4B] font-black text-2xl">
         {props.item.name}

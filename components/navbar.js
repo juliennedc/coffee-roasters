@@ -4,15 +4,19 @@ export default function Navbar() {
   return (
     <nav className="z-10 sticky top-0 flex justify-between items-center px-[1.125rem] py-[2rem] bg-base-100">
       <Image
+        className="h-auto"
         src="/static/images/shared/desktop/logo.svg"
-        width={"163px"}
-        height="18px"
+        width={163}
+        height={18}
+        alt=""
       />
       <button>
         <Image
+          alt=""
+          className="h-auto"
           src="/static/images/shared/mobile/icon-hamburger.svg"
-          height={"16px"}
-          width="15px"
+          height={16}
+          width={15}
         />
       </button>
     </nav>
