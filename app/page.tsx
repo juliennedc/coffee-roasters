@@ -1,5 +1,4 @@
 // Import your Client Component
-import HomePage from "./home-page";
 
 async function getPosts() {
   const res = await fetch("https://...");

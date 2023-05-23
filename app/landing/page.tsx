@@ -77,8 +77,15 @@ export default function Home() {
               our collection
             </h2>
             <div className="flex flex-col items-center justify-center gap-12">
-              {collection.map((kopi) => {
-                return <Collection key={kopi.name} item={kopi} />;
+              {collection.map(({ name, image, dscp }) => {
+                return (
+                  <Collection
+                    key={name}
+                    name={name}
+                    image={image}
+                    dscp={dscp}
+                  />
+                );
               })}
             </div>
           </div>
